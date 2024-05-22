@@ -23,10 +23,11 @@ body{
 }
 
 .header{
+    width: 100%;
     height: 55px;
     background-color: var(--color-secondary);
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     gap: 30%;
 
@@ -43,29 +44,24 @@ body{
 .menu__list{
     display: flex;
     list-style: none;
-    gap: 60px;
-
+    gap: 1.5rem;
 }
 
 .icon__nav{
-    width: 20px;
-    height: 16px;
+    width: 25%;
+    height: 70%;
 }
 
 .list__link{
     text-decoration: none;
     color: var(--color-text);
-    margin-left: 3px;
+    margin-left: 3%;
 
 }
 
 .list__link:hover{
     border-radius: 5px;
     background-color: var(--color-button-hover);
-}
-
-.list__link__select{
-    border-bottom: 3px solid var(--color-title);
 }
 
 .main{
@@ -152,6 +148,10 @@ body{
     border-radius: 6px;
 }
 
+.image__main{
+    width: 35%;
+}
+
 .footer{
     text-align: center;
     background-color: var(--color-secondary);
@@ -160,4 +160,45 @@ body{
 
 .image__footer{
     height: 30px;
+}
+
+
+@media(max-width: 800px){
+    .main{
+        flex-direction: column-reverse;
+    }
+    .social__midia{
+        justify-content: center;
+        gap: 25px; 
+    }
+    .header{
+        justify-content: center;
+        gap: 20px;
+    }
+}
+
+@media(max-width: 550px){
+    .main__text{
+        width: 220px;
+    }
+    .image__main{
+        width: 200px;
+        height: 180px;
+    }
+    .skills__cards{
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 950px){
+    .projects{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+    .main__project{
+        gap: 2rem;
+    }
+
 }
