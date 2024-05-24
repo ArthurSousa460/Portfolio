@@ -55,7 +55,6 @@ body{
 .list__link{
     text-decoration: none;
     color: var(--color-text);
-    margin-left: 3%;
 
 }
 
@@ -195,6 +194,10 @@ body{
 }
 
 @media(max-width: 550px){
+    .main__title{
+        width: 220px;
+        font-size: 25px;
+    }
     .main__text{
         width: 220px;
     }
