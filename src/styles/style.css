@@ -199,7 +199,8 @@ body{
         font-size: 20px;
     }
     .main__text{
-        width: 230px;
+        width: 245px;
+        font-size: 16px;
     }
     .image__main{
         width: 200px;
